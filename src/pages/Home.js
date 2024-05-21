@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import BlogCard from "../components/blogCard";
+import ProductCard from "../components/productCard";
 
 function Home() {
   return (
@@ -200,41 +202,70 @@ function Home() {
             </div>
           </div>
         </section>
-      </section>
-      <section className="marque-wrapper py-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <div className="marquee-inner-wrapper card-wrapper">
-                <Marquee className="d-flex">
-                  <div className="">
-                    <img src="images/brand-01.png" alt="brand" />
-                  </div>
-                  <img src="images/brand-02.png" alt="brand" />
-                  <div className=" mx-4 w-25">
-                    <img src="images/brand-03.png" alt="brand" />
-                  </div>
-                  <div className=" mx-4 w-25">
-                    <img src="images/brand-04.png" alt="brand" />
-                  </div>
-                  <div className=" mx-4 w-25">
-                    <img src="images/brand-05.png" alt="brand" />
-                  </div>
-                  <div className=" mx-4 w-25">
-                    <img src="images/brand-06.png" alt="brand" />
-                  </div>
-                  <div className=" mx-4 w-25">
-                    <img src="images/brand-07.png" alt="brand" />
-                  </div>
-                  <div className=" mx-4 w-25">
-                    <img src="images/brand-08.png" alt="brand" />
-                  </div>
-                </Marquee>
+        <section className="marque-wrapper py-5">
+          <div className="container-xxl">
+            <div className="row">
+              <div className="col-12">
+                <div className="marquee-inner-wrapper card-wrapper">
+                  <Marquee className="d-flex gap-10">
+                    <div className="">
+                      <img src="images/brand-01.png" alt="brand" />
+                    </div>
+                    <img src="images/brand-02.png" alt="brand" />
+                    <div className=" mx-4 w-25">
+                      <img src="images/brand-03.png" alt="brand" />
+                    </div>
+                    <div className=" mx-4 w-25">
+                      <img src="images/brand-04.png" alt="brand" />
+                    </div>
+                    <div className=" mx-4 w-25">
+                      <img src="images/brand-05.png" alt="brand" />
+                    </div>
+                    <div className=" mx-4 w-25">
+                      <img src="images/brand-06.png" alt="brand" />
+                    </div>
+                    <div className=" mx-4 w-25">
+                      <img src="images/brand-07.png" alt="brand" />
+                    </div>
+                    <div className=" mx-4 w-25">
+                      <img src="images/brand-08.png" alt="brand" />
+                    </div>
+                  </Marquee>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section className="blog-wrapper py-5 home-wrapper-2 ">
+          <div className="container-xxl">
+            <div className="section-heading">
+              <h3>Our Popular Products</h3>
+            </div>
+            <div className="row gap-3">
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+              <ProductCard />
+   
+            </div>
+          </div>
+        </section>
+        <section className="blog-wrapper py-5 home-wrapper-2 ">
+          <div className="container-xxl">
+            <div className="section-heading">
+              <h3>Our Latest Blog</h3>
+            </div>
+            <div className="row gap-3">
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+              <BlogCard />
+            </div>
+          </div>
+        </section>
       </section>
+
+    
     </>
   );
 }
