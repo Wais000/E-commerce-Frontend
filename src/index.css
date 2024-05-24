@@ -3,14 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-.card-wrapper {
+ .card-wrapper {
   background-color: #fff;
   box-shadow: 0 0 10px #0000001a;
   /* border: 1px solid red; */
   border-radius: 10px;
-  padding: 10px 20px;
-  margin-top: 3%;
-}
+  padding: 10px 0px;
+  /* margin-top: 3%; */
+ }
 :root {
   --color-131921: #131921;
   --color-3b4149: #3b4149;
@@ -20,6 +20,7 @@
   --color-f5f5f7: #f5f5f7;
   --color-ededed: #ededed;
   --color-1c1c1b: #1c1c1b;
+
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -53,6 +54,9 @@ a {
 }
 .gap-10 {
   gap: 10px;
+}
+.gap-30 {
+  gap: 30px;
 }
 .gap-15 {
   gap: 15px;
@@ -284,7 +288,6 @@ p {
 
 .blog-main-container, .product-main-card {
   width: 24%;
-  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
 }
@@ -349,6 +352,7 @@ padding: 8%;
 }
 .product-card .product-image{
   height: 270px;
+  width: 270px;
 }
 .product-card .product-image img{
 object-fit: contain;
@@ -365,5 +369,76 @@ display: block;
 }
 /* Product cart Ends*/
 
+/* special Product starts*/
+.special-product-card{
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  /* border: 1px solid red; */
+}
+.prod-count{
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 10px 10px;
+
+}
+.discount-days{
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+
+}
+.special-product-content{
+  /* border: 1px solid rgb(0, 255, 8); */
+  width: 100%;
+}
+.discount-till{
+  /* border: 4px solid rgb(245, 3, 213); */
+  width: 100%;
+}
+.pro-title{
+font-size: 14px;
+  width: 40%;
+}
+.progress{
+
+  width: 60%;
+}
+
+
+/* Popular Product here starts*/
+.col-2 .cart{
+border: 1px solid red;
+}
+.famous-cart img{
+border-radius: 10px;
+}
+.famous-cart .famous-content{
+top: 10%;
+left: 10%;
+}
+.famous-cart .famous-content h5{
+font-size: 13px;
+line-height: 20px;
+font-weight: 400px;
+margin-bottom: 7px;
+color: #fff;
+}
+.famous-cart .famous-content h6{
+font-size: 25px;
+line-height: 38px;
+font-weight: 500px;
+color: #fff;
+}
+.famous-cart .famous-content p{
+font-size: 16px;
+line-height: 24px;
+font-weight: 100px;
+color: #fff;
+}
+/* Popular Product here ends*/
+
+/* special Product here ends*/
 
 /* Home page Ended*/
