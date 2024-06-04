@@ -4,10 +4,15 @@ import Marquee from "react-fast-marquee";
 import BlogCard from "../components/blogCard";
 import ProductCard from "../components/productCard";
 import SpecialProduct from "../components/specialProduct";
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (
     <>
+          <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home</title>
+      </Helmet>
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl d-flex">
           <div className="row ">
